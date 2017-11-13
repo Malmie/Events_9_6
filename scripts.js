@@ -3,8 +3,8 @@ var add = document.getElementById("addElem")
 
 add.addEventListener('click', function() {
 	var element = document.createElement('li');
-	element.innerHTML = 'item'; // jak dodać numery do kolejnych podpunktów?
 	var numberOfItems = document.getElementsByTagName('li').length; 
+	element.innerHTML = 'item' + numberOfItems;
 	list.appendChild(element);
 });
 
